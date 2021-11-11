@@ -1,0 +1,16 @@
+const EventEmitter=require("events")
+const event=new EventEmitter();
+
+event.on("myDetails", ()=>{
+  console.log(" My name is Sahil Jack")
+});
+
+event.on("myDetails", ()=>{
+    console.log(" My age is 20")
+  });
+
+  event.on("myDetails", ()=>{
+    console.log(" I am a web developer")
+  });
+event.emit("myDetails");
+
