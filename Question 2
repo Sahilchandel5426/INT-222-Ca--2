@@ -1,0 +1,10 @@
+const fs=require("fs")
+const b=fs.readFileSync('./demo.txt'); 
+console.log(b.toString());
+
+
+fs.writeFileSync('./copy.txt',b.toString());
+fs.unlinkSync('./demo.txt')
+
+
+
