@@ -1,3 +1,6 @@
+#server.js Code For node.js Application :
+
+
 const path = require("path");
 const express = require("express");
 const app = express();
@@ -64,3 +67,38 @@ app.post('/', urlencodedParser, (req, res) => {
 app.listen(3000, () => {
     console.log('listening')
 })
+
+
+
+# Registration Form Code:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+      
+    <div class="container">
+        <h1>Valorant India Tournaments </h1>
+     <div class="ele">
+         <form action="/" method="post">
+        First Name <input type="text" placeholder="Enter Your  First Name" name="FName"></div>
+       <div class="ele">
+        Valorant Id <input type="text" placeholder="Enter Your Valorant ID" name="VID"></div>
+        <div class="ele">
+        Mobile num <input type="number" placeholder="Enter Your Mobile Number " name="MNo"></div>
+        
+        <div class="ele">
+             <input type="submit" value="send"></div>
+    </form>
+
+     
+    </div></div>
+    
+</body>
+</html>
